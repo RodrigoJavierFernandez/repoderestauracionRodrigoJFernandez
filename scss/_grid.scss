@@ -1,0 +1,26 @@
+.grid{
+    display: grid;
+    border-color: 2px black solid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
+    background-color: rgb(255, 255, 255);
+    grid-template-areas:
+    "header header"
+    "img1 img2";
+    background-color: rgb(255, 255, 255);
+    
+    
+     h1{ grid-area: header; }
+    
+     .imgrs1 {
+    grid-area: img1;
+    }
+    .imgrs2 {
+    grid-area: img2;
+    height: 500px;
+    width: 500px;
+    }
+    button{
+    grid-area: "footer";
+    }
+    }

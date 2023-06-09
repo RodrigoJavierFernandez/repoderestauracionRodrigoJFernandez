@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.footerdiv {
+  background-color: rgb(8, 7, 7);
+  color: darkgoldenrod;
+  width: 100%;
+  margin: 0.2rem;
+  padding: 0.1rem;
+}
+
+header {
+  height: 50px;
+  background-color: rgb(111, 118, 115);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav {
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  border-color: 2px black solid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
+  background-color: rgb(255, 255, 255);
+  grid-template-areas: "header header" "img1 img2";
+  background-color: rgb(255, 255, 255);
+}
+.grid h1 {
+  grid-area: header;
+}
+.grid .imgrs1 {
+  grid-area: img1;
+}
+.grid .imgrs2 {
+  grid-area: img2;
+  height: 500px;
+  width: 500px;
+}
+.grid button {
+  grid-area: "footer";
+}
+
+body {
+  font-family: 34568iZxc sans-serif;
+  background-color: rgb(245, 255, 252);
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.img_body {
+  padding: 0;
+}
+
+/*///////////*Estilos Header/////////*/
+header {
+  /* display: flex; */
+  height: 50px;
+  background-color: rgb(111, 118, 115);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  margin: 5px;
+}
+
+/*////////// CONTACTO //////////*/
+.imgrs2 {
+  height: 500px;
+  width: 500px;
+}
+
+section {
+  display: grid;
+  border-color: 2px black solid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
+  background-color: rgb(255, 255, 255);
+  grid-template-areas: "header header" "img1 img2";
+}
+
+.grid {
+  background-color: rgb(255, 255, 255);
+}
+
+section h1 {
+  grid-area: header;
+}
+
+section .imgrs1 {
+  grid-area: img1;
+}
+
+section .imgrs2 {
+  grid-area: img2;
+}
+
+button {
+  grid-area: "footer";
+}
+
+/*///////////////////////    FOOTER       ///////////////////*/
+.footerdiv {
+  background-color: rgb(8, 7, 7);
+  color: darkgoldenrod;
+  width: 100%;
+  margin: 0.2rem;
+  padding: 0.1rem;
+}
+
+/* Atributos generales */
+.gridContainer {
+  /* Le digo al elmento que tenga formato de grilla */
+  display: grid;
+  /* Defino las columnas usando porcentajes
+  (cada valor es una columna y con porcentajes siempre
+  tenemos que sumar un total de 100% para no generar
+  un scroll horizontal) */
+  grid-template-columns: 50% 50%;
+  /* Defino las filas que con "min-content" van a
+  ajustarse automáticamente al tamaño de los elementos */
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
+  /* Defino "el nombre" de cada celda o área de nuestra grilla.
+  Se puede pensar que cada grupo de comillas es una fila
+  y cada valor es una columna */
+  grid-template-areas: "titulo   img" "parrafo  img" "button   img";
+  /* Atributos de diseño*/
+  width: 70%;
+  margin: 5% auto;
+}
+
+.gridContainer h2 {
+  /* Le asigno el lugar en la grilla con el
+  nombre correspondiente */
+  grid-area: titulo;
+  /* Atributos de diseño */
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  margin: 5% 0;
+}
+
+.gridContainer h3 {
+  /* Le asigno el lugar en la grilla con el
+  nombre correspondiente */
+  grid-area: parrafo;
+  /* Atributos de diseño */
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  margin: 5% 0;
+  width: 90%;
+}
+
+.gridContainer button {
+  /* Le asigno el lugar en la grilla con el
+  nombre correspondiente */
+  grid-area: button;
+  /* Atributos de diseño */
+  border: 0;
+  background-color: #d5d9dd;
+  color: white;
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 980px;
+}
+
+.gridContainer .vertical {
+  /* Le asigno el lugar en la grilla con el
+  nombre correspondiente */
+  grid-area: img;
+  /* Atributos de diseño */
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.gridContainer h3 {
+  /* Le asigno el lugar en la grilla con el
+  nombre correspondiente */
+  grid-area: parrafo;
+  /* Atributos de diseño */
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 10rem auto 5rem auto;
+}
+
+/* ====================================================== CARDS */
+.titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titleContainer h1 {
+  -webkit-text-decoration: underline rgb(16, 10, 10);
+          text-decoration: underline rgb(16, 10, 10);
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  margin-bottom: 8rem;
+}
+
+.card {
+  width: 10%;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: #E1E1E1;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* ====================================================== BLOGS */
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.work {
+  font-size: 2rem;
+  margin: 4rem 0;
+}
+
+.blog, .blogIzq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  text-decoration: none;
+}
+
+.blog div,
+.blogIzq div {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+/* Ivierto la disposición */
+.blogIzq {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.blogA {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.headertarot {
+  background-color: #fbc8c7;
+  text-align: center;
+  border-radius: 0.3em;
+  margin: 0.5rem;
+}
+
+.pagtarotdiv {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(255, 194, 217);
+  margin: 0.5rem;
+  border-radius: 0.3em;
+  padding: 5rem;
+  text-decoration: none;
+}
+
+.ultarot {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper::before {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background-color: rgb(0, 194, 129);
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.wrapper:hover::before {
+  opacity: 0.6;
+}
+
+.wrapper anchor {
+  position: fixed;
+}
+
+/*////////////////        FAQ      /////////////////////////////////*/
+.Heading {
+  text-align: center;
+}
+
+.faqs {
+  background-color: #fbc8c7;
+  width: 80%;
+  height: 100%;
+}
+
+/*/////////////////////        GUIAS      ////////////////////////////////*/
+body {
+  background-color: #fff;
+}
+
+.imgguias {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+.guiasimg {
+  width: 400px;
+}

@@ -1,0 +1,39 @@
+
+.blogContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.work{
+    font-size: 2rem;
+    margin: 4rem 0;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: .5rem;
+    width: 40%;
+}
+
+
+.blogder{
+    display: flex;
+    margin: 1rem;
+    text-align: left;
+}
+
+/* Ivierto la disposición */
+.blogA{
+    flex-direction: row-reverse;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.blogA{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}

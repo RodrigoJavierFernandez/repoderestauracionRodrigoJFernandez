@@ -1,6 +1,4 @@
-@import './footer';
-@import './header';
-@import './grid';
+
 
 body{
     font-family: 34568iZxc sans-serif;
@@ -304,3 +302,8 @@ body{
  
 
 }
+@import url(./_cards.scss);
+@import url(./_header.scss);
+@import url(./_footer.scss);
+@import url(./_grid.scss);
+@import url(./_media.scss);

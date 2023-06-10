@@ -1,52 +1,9 @@
 @charset "UTF-8";
-.footerdiv {
-  background-color: rgb(8, 7, 7);
-  color: darkgoldenrod;
-  width: 100%;
-  margin: 0.2rem;
-  padding: 0.1rem;
-}
-
-header {
-  height: 50px;
-  background-color: rgb(111, 118, 115);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header nav {
-  margin: 5px;
-}
-
-.grid {
-  display: grid;
-  border-color: 2px black solid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
-  grid-template-rows: min-content min-content min-content;
-  background-color: rgb(255, 255, 255);
-  grid-template-areas: "header header" "img1 img2";
-  background-color: rgb(255, 255, 255);
-}
-.grid h1 {
-  grid-area: header;
-}
-.grid .imgrs1 {
-  grid-area: img1;
-}
-.grid .imgrs2 {
-  grid-area: img2;
-  height: 500px;
-  width: 500px;
-}
-.grid button {
-  grid-area: "footer";
-}
-
+@import url(./_cards.scss);
+@import url(./_header.scss);
+@import url(./_footer.scss);
+@import url(./_grid.scss);
+@import url(./_media.scss);
 body {
   font-family: 34568iZxc sans-serif;
   background-color: rgb(245, 255, 252);

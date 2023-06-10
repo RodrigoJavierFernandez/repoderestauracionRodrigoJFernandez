@@ -205,31 +205,25 @@ button{
 .work{
     font-size: 2rem;
     margin: 4rem 0;
-}
-.blog, .blogIzq{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    text-decoration: none;
-}
 
-.blog div,
-.blogIzq div{
-    width: 60%;
-    margin: auto;
-    text-align: left;
-}
 
-/* Ivierto la disposición */
-.blogIzq{
-    flex-direction: row-reverse;
 }
-
+.blog{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 1.5rem;
+        
+}
+.blog img {
+        width: 30%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+}
 .blogA{
     margin: 1rem;
-    padding: 1rem;
-}
-
+  }
 
 
 

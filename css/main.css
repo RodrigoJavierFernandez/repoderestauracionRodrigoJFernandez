@@ -421,6 +421,11 @@ header nav {
 .grid button {
   grid-area: "footer";
 }
+.imgrs2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media screen and (min-width: 40px) and (max-width: 800px) {
   .grid__img {
